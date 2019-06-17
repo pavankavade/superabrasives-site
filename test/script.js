@@ -13,9 +13,21 @@ $(document).ready(function () {
   });
 
   //open sidebar
+  $("dropdown").on("click", function () {
+    $(".dropdown, .dropdown-menu").toggleClass("show");
+
+
+  });
+
   $(".navbar-toggler, .overlay").on("click", function () {
     $(".mobileMenu, .overlay").toggleClass("open");
-  })
+  });
+
+  $("#arrow ").on("click", function () {
+    $("#arrow").toggleClass("fa-caret-up");
+    $("#arrow").toggleClass("fa-caret-down");
+  });
+
 });
 
 
@@ -31,3 +43,10 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 }
+
+
+$(function () {
+  $('#ham').click(function () {
+    $('#content').css('background', '-=10px');
+  });
+});

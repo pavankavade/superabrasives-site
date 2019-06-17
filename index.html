@@ -5,141 +5,127 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <script src="./js/script.js"></script>
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <title>Welcome to WorkStation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-  <!-- Navbar  -->
-  <nav class="navbar navbar-expand-sm justify-content-sm-start  ">
-    <a class="navbar-brand" href="index.html"><strong>Super Abrasives</strong> </a>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/74d8f3489a.js"></script>
 
-    <button class="navbar-toggler align-self-start" type="button" data-toggle="collapse" data-target="#mobile-nav">
-      <span class="navbar-toggler-icon">
+  <script src="./js/script.js"></script>
 
-        <i class="fa fa-bars"></i>
-      </span>
+  <nav class="navbar navbar-expand-lg navbar-light mx-bg-light  fixed-top">
+    <a class="navbar-brand order-0 order-lg-0 ml-lg-0 mr-2 align-self-start mr-sm-0" href="#">
+      <strong style="      
+        color:red;
+        position: relative;
+        font-size: 30.6px;       
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 900;">
+        Super Abrasives
+      </strong>
+    </a>
+
+    <button class="navbar-toggler align-self-start" type="button" data-toggle="collapse" id="ham">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <p class="iso mt-lg-3 mt-sm-0">An ISO 9001 - 2015 Company</p>
-
+    <div class="mt-lg-0 mt-0 mt-sm-0" id="iso">
+      An ISO 9001-2015 Company
+    </div>
 
 
     <div
-      class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row bg-light p-3 p-lg-0 mt-sm-5 mt-lg-0  justify-content-lg-end mobileMenu"
-      id="mobile-nav">
+      class="collapse navbar-collapse mx-bg-light p-3 mt-5 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu onRight"
+      id="navbarSupportedContent">
+      <button class="navbar-toggler d-flex flex-row p-2  " type="button" data-toggle="collapse" id="close"
+        style="border: none; float: right;">
+        <span class="minus"><i class="fa fa-times"></i></span>
+      </button>
 
-      <ul class="navbar-nav  align-self-stretch ">
-        <li class="nav-item mr-2">
+      <ul class="navbar-nav align-self-start mt-sm-2 mt-mx-2">
+
+        <li class="nav-item active ">
           <a class="nav-link" href="index.html">Home</a>
         </li>
-        <li class="nav-item mr-2">
+
+
+        <li class="nav-item ">
           <div class="dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="vision.html">Vision & Mission</a>
-              <a class="dropdown-item" href="profile.html">Establishment & Profile</a>
-              <a class="dropdown-item" href="people.html">People Behind Super Abrasives</a>
+            <a class="nav-link " data-toggle="dropdown">About Us <i class="fas fa-caret-down ml-2" id="arrow"
+                style="@media (max-width: 445px) { margin-left:157px !important;}"></i> </a>
+            <div class="dropdown-menu mb-2" style="border:none;background-color: #F8F9FA">
+              <a class="dropdown-item mb-2" href="./content/vision.html">Vision & Mission</a>
+              <a class="dropdown-item mb-2" href="profile.html">Establishment & Profile</a>
+              <a class="dropdown-item mb-2" href="people.html">People Behind Super Abrasives</a>
             </div>
           </div>
         </li>
-        <li class="nav-item mr-2">
+
+        <li class="nav-item ">
           <div class="dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Products</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="depressed.html">Depressed Centre Wheels</a>
-              <a class="dropdown-item" href="reinforced.html">Reinforced Cut-off Wheels</a>
-              <a class="dropdown-item" href="mounted.html">Mounted points</a>
+            <a class="nav-link" data-toggle="dropdown">Products <i class="fas fa-caret-down ml-2" id="arrow"
+                style="@media (max-width: 445px) { margin-left:160px !important;}"></i></a>
+            <div class="dropdown-menu" style="border:none;background-color: #F8F9FA">
+              <a class="dropdown-item mb-2" href="depressed.html">Depressed Centre Wheels</a>
+              <a class="dropdown-item mb-2" href="reinforced.html">Reinforced Cut-off Wheels</a>
+              <a class="dropdown-item mb-2" href="mounted.html">Mounted points</a>
               <a class="dropdown-item" href="swing.html">Swing Frames & Plain Wheels</a>
             </div>
           </div>
         </li>
-        <li class="nav-item mr-2">
+        <li class="nav-item ">
           <a class="nav-link" href="Safety-measures.html">Safety Measures </a>
         </li>
-        <li class="nav-item mr-2">
+        <li class="nav-item ">
           <div class="dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Gallery</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="vision.html">Photos</a>
+            <a class="nav-link" data-toggle="dropdown">Gallery <i class="fas fa-caret-down ml-2"
+                style="@media (max-width: 445px) { margin-left:172px !important;}"></i></a>
+            <div class="dropdown-menu" style="border:none; background-color: #F8F9FA; ">
+              <a class="dropdown-item" href="profile.html">Pictures</a>
               <a class="dropdown-item" href="profile.html">Videos</a>
             </div>
           </div>
         </li>
-        <li class="nav-item mr-2">
+        <li class="nav-item ">
           <a class="nav-link" href="enquiry.html">Enquiry </a>
         </li>
-        <li class="nav-item mr-2">
-          <a class="nav-link" href="contact.html">Contact Us </a>
+        <li class="nav-item ">
+          <a class="nav-link" href="./content/contact.html">Contact Us </a>
         </li>
-
-
       </ul>
+
+
     </div>
   </nav>
-  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolor pariatur. Dolore, corporis. Esse, sequi
-    velit quam neque aliquam nostrum dolor illo? Amet tenetur facilis minima eligendi, aut qui voluptatibus?Lorem ipsum
-    dolor, sit amet consectetur adipisicing elit. Dolore placeat, sequi, consectetur minus deleniti deserunt vel animi
-    magnam modi assumenda laudantium ipsam ipsum omnis veritatis, nulla aliquid vero! Voluptate, laboriosam?Lorem ipsum
-    dolor sit amet, consectetur adipisicing elit. Consequuntur suscipit repellat facere, cupiditate aut, vitae modi nisi
-    eum delectus, saepe impedit natus reiciendis. Dolor itaque illo natus provident vitae unde.Lorem ipsum dolor sit
-    amet consectetur adipisicing elit. Temporibus, dolor pariatur. Dolore, corporis. Esse, sequi velit quam neque
-    aliquam nostrum dolor illo? Amet tenetur facilis minima eligendi, aut qui voluptatibus?Lorem ipsum dolor, sit amet
-    consectetur adipisicing elit. Dolore placeat, sequi, consectetur minus deleniti deserunt vel animi magnam modi
-    assumenda laudantium ipsam ipsum omnis veritatis, nulla aliquid vero! Voluptate, laboriosam?Lorem ipsum dolor sit
-    amet, consectetur adipisicing elit. Consequuntur suscipit repellat facere, cupiditate aut, vitae modi nisi eum
-    delectus, saepe impedit natus reiciendis. Dolor itaque illo natus provident vitae undeLorem ipsum dolor sit amet
-    consectetur adipisicing elit. Temporibus, dolor pariatur. Dolore, corporis. Esse, sequi velit quam neque aliquam
-    nostrum dolor illo? Amet tenetur facilis minima eligendi, aut qui voluptatibus?Lorem ipsum dolor, sit amet
-    consectetur adipisicing elit. Dolore placeat, sequi, consectetur minus deleniti deserunt vel animi magnam modi
-    assumenda laudantium ipsam ipsum omnis veritatis, nulla aliquid vero! Voluptate, laboriosam?Lorem ipsum dolor sit
-    amet, consectetur adipisicing elit. Consequuntur suscipit repellat facere, cupiditate aut, vitae modi nisi eum
-    delectus, saepe impedit natus reiciendis. Dolor itaque illo natus provident vitae undeLorem ipsum dolor sit amet
-    consectetur adipisicing elit. Temporibus, dolor pariatur. Dolore, corporis. Esse, sequi velit quam neque aliquam
-    nostrum dolor illo? Amet tenetur facilis minima eligendi, aut qui voluptatibus?Lorem ipsum dolor, sit amet
-    consectetur adipisicing elit. Dolore placeat, sequi, consectetur minus deleniti deserunt vel animi magnam modi
-    assumenda laudantium ipsam ipsum omnis veritatis, nulla aliquid vero! Voluptate, laboriosam?Lorem ipsum dolor sit
-    amet, consectetur adipisicing elit. Consequuntur suscipit repellat facere, cupiditate aut, vitae modi nisi eum
-    delectus, saepe impedit natus reiciendis. Dolor itaque illo natus provident vitae undeLorem ipsum dolor sit amet
-    consectetur adipisicing elit. Temporibus, dolor pariatur. Dolore, corporis. Esse, sequi velit quam neque aliquam
-    nostrum dolor illo? Amet tenetur facilis minima eligendi, aut qui voluptatibus?Lorem ipsum dolor, sit amet
-    consectetur adipisicing elit. Dolore placeat, sequi, consectetur minus deleniti deserunt vel animi magnam modi
-    assumenda laudantium ipsam ipsum omnis veritatis, nulla aliquid vero! Voluptate, laboriosam?Lorem ipsum dolor sit
-    amet, consectetur adipisicing elit. Consequuntur suscipit repellat facere, cupiditate aut, vitae modi nisi eum
-    delectus, saepe impedit natus reiciendis. Dolor itaque illo natus provident vitae undeLorem ipsum dolor sit amet
-    consectetur adipisicing elit. Temporibus, dolor pariatur. Dolore, corporis. Esse, sequi velit quam neque aliquam
-    nostrum dolor illo? Amet tenetur facilis minima eligendi, aut qui voluptatibus?Lorem ipsum dolor, sit amet
-    consectetur adipisicing elit. Dolore placeat, sequi, consectetur minus deleniti deserunt vel animi magnam modi
-    assumenda laudantium ipsam ipsum omnis veritatis, nulla aliquid vero! Voluptate, laboriosam?Lorem ipsum dolor sit
-    amet, consectetur adipisicing elit. Consequuntur suscipit repellat facere, cupiditate aut, vitae modi nisi eum
-    delectus, saepe impedit natus reiciendis. Dolor itaque illo natus provident vitae undeLorem ipsum dolor sit amet
-    consectetur adipisicing elit. Temporibus, dolor pariatur. Dolore, corporis. Esse, sequi velit quam neque aliquam
-    nostrum dolor illo? Amet tenetur facilis minima eligendi, aut qui voluptatibus?Lorem ipsum dolor, sit amet
-    consectetur adipisicing elit. Dolore placeat, sequi, consectetur minus deleniti deserunt vel animi magnam modi
-    assumenda laudantium ipsam ipsum omnis veritatis, nulla aliquid vero! Voluptate, laboriosam?Lorem ipsum dolor sit
-    amet, consectetur adipisicing elit. Consequuntur suscipit repellat facere, cupiditate aut, vitae modi nisi eum
-    delectus, saepe impedit natus reiciendis. Dolor itaque illo natus provident vitae unde</h1>
+  <div class="overlay"></div>
+  <div id="content">
+    <div class="triangle"></div>
+    <div class="shadow">
+      <img class="logo" src="./img/Logo-Design-Final.png" alt="Logo-Design-Final">
+    </div>
 
+    <div class="shadow1">
+      <h1 class="heading">
+        <div class="main-head text-center ">
+          <h1><b>Super Abrasives</b><sup>®</sup></h1>
 
+          <div class="dash text-center"></div>
+          <span class="sub-head">
+            <h2>behold the power of Grinding</h2>
+          </span>
+        </div>
+      </h1>
+    </div>
+  </div>
 
-
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

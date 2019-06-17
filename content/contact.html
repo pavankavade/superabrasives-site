@@ -6,12 +6,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style type="text/css">
+    .triangle1 {
+      background-image: linear-gradient(to right bottom, red 50%, transparent 50%);
+      position: absolute;
+      margin-top: 75px;
+      width: 48%;
+      height: 17%;
+      top: 0;
+      left: 0;
+    }
+
+    .triangle2 {
+      background-image: linear-gradient(to left bottom, red 50%, transparent 50%);
+      position: absolute;
+      margin-top: 75px;
+      width: 48%;
+      height: 17%;
+      top: 0;
+      right: 0;
+    }
+
+    .triangle3 {
+      background-image: linear-gradient(to top left, rgb(27, 202, 233) 50%, transparent 50%);
+      position: absolute;
+      width: 75%;
+      height: 50%;
+      bottom: 0;
+      right: 0;
+    }
+
+    .heading {
+      position: relative;
+      max-width: 100%;
+      max-height: 100%;
+      margin-top: -30%;
+      margin-left: -50%;
+    }
+
+    .sub-heading {
+      position: relative;
+      max-width: 100%;
+      max-height: 100%;
+      margin-top: 40%;
+      margin-left: -50%;
+    }
+
+    div h1 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: black;
+      font-size: 39.1px;
+    }
+
+    div h2 {
+      font-family: Lobster;
+      font-size: 27.42px;
+      color: black;
+    }
+
+    div.shadow1 {
+      position: absolute;
+      max-width: 45%;
+      max-height: 45%;
+      top: 50%;
+      left: 50%;
+      overflow: visible;
+      box-shadow: none !important;
+    }
+
+    .dash {
+      padding: .1em 0 0 0;
+      width: 3em;
+      margin: 20px;
+      margin-left: 35%;
+      background-color: black;
+    }
+
+    .content {
+      color: #666666;
+      font-size: 20px;
+      font-family: Roboto;
+      text-align: justify;
+      margin-top: 22%;
+      margin-left: 10%;
+    }
+  </style>
+
+
 </head>
 
 <body>
@@ -20,14 +108,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/74d8f3489a.js"></script>
 
-  <script src="script.js"></script>
+  <script src="../js/script.js"></script>
 
   <nav class="navbar navbar-expand-lg navbar-light mx-bg-light  fixed-top">
     <a class="navbar-brand order-0 order-lg-0 ml-lg-0 mr-2 align-self-start mr-sm-0" href="#">
       <strong style="      
         color:red;
         position: relative;
-        font-size: 28px;       
+        font-size: 30.6px;       
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: 900;">
         Super Abrasives
@@ -46,7 +134,7 @@
       class="collapse navbar-collapse mx-bg-light p-3 mt-5 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu onRight"
       id="navbarSupportedContent">
       <button class="navbar-toggler d-flex flex-row p-2  " type="button" data-toggle="collapse" id="close"
-        style="border: none; float: right; margin-left: 250px">
+        style="border: none; float: right;">
         <span class="minus"><i class="fa fa-times"></i></span>
       </button>
 
@@ -56,11 +144,13 @@
           <a class="nav-link" href="index.html">Home</a>
         </li>
 
+
         <li class="nav-item ">
           <div class="dropdown">
-            <a class="nav-link " data-toggle="dropdown">About Us <span class="caret"></span></a>
+            <a class="nav-link " data-toggle="dropdown">About Us <i class="fas fa-caret-down ml-2" id="arrow"
+                style="@media (max-width: 445px) { margin-left:157px !important;}"></i> </a>
             <div class="dropdown-menu mb-2" style="border:none;background-color: #F8F9FA">
-              <a class="dropdown-item mb-2" href="vision.html">Vision & Mission</a>
+              <a class="dropdown-item mb-2" href="./content/vision.html">Vision & Mission</a>
               <a class="dropdown-item mb-2" href="profile.html">Establishment & Profile</a>
               <a class="dropdown-item mb-2" href="people.html">People Behind Super Abrasives</a>
             </div>
@@ -69,7 +159,8 @@
 
         <li class="nav-item ">
           <div class="dropdown">
-            <a class="nav-link" data-toggle="dropdown">Products <i class="fas fa-caret-down ml-2" id="arrow"></i></a>
+            <a class="nav-link" data-toggle="dropdown">Products <i class="fas fa-caret-down ml-2" id="arrow"
+                style="@media (max-width: 445px) { margin-left:160px !important;}"></i></a>
             <div class="dropdown-menu" style="border:none;background-color: #F8F9FA">
               <a class="dropdown-item mb-2" href="depressed.html">Depressed Centre Wheels</a>
               <a class="dropdown-item mb-2" href="reinforced.html">Reinforced Cut-off Wheels</a>
@@ -83,9 +174,10 @@
         </li>
         <li class="nav-item ">
           <div class="dropdown">
-            <a class="nav-link" data-toggle="dropdown">Gallery <i class="fas fa-caret-down ml-2"></i></a>
+            <a class="nav-link" data-toggle="dropdown">Gallery <i class="fas fa-caret-down ml-2"
+                style="@media (max-width: 445px) { margin-left:172px !important;}"></i></a>
             <div class="dropdown-menu" style="border:none; background-color: #F8F9FA; ">
-              <a class="dropdown-item mb-2" href="vision.html">Photos</a>
+              <a class="dropdown-item" href="profile.html">Pictures</a>
               <a class="dropdown-item" href="profile.html">Videos</a>
             </div>
           </div>
@@ -94,7 +186,7 @@
           <a class="nav-link" href="enquiry.html">Enquiry </a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="contact.html">Contact Us </a>
+          <a class="nav-link" href="./content/contact.html">Contact Us </a>
         </li>
       </ul>
 
@@ -103,8 +195,31 @@
   </nav>
   <div class="overlay"></div>
   <div id="content">
-
+    <div class="triangle1"></div>
+    <div class="triangle2"></div>
+    <div class="triangle3"></div>
+    <div class="content">
+      <p>Plot No. 9B,</p>
+      <p>L.K.Akiwate Industrial Estate,</p>
+      <p>Jaysingpur – 416144</p>
+      <p>Dist – Kolhapur</p>
+      <p>Website – www.superabrasives.co.in</p>
+      <p>Email – super.abrasives@rediffmail.com, superabrasives1992@gmail.com</p>
+      <p>Ph. No. – (02322) 221686 Mob. – 9823206555, 9689897573</p>
+    </div>
+    <div class="shadow1">
+      <h1 class="heading">
+        <div class="main-head text-center">
+          <h1><b>Contact Us 9823206555</b></h1>
+          <div class="dash text-center"></div>
+          <span class="sub-head">
+            <h2><b>We are happy to help You!</b></h2>
+          </span>
+        </div>
+      </h1>
+    </div>
   </div>
+
 </body>
 
 </html>
