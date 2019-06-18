@@ -43,9 +43,23 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 }
 
-
+//sidebar background
 $(function () {
   $('#ham').click(function () {
     $('#content').css('background', '-=10px');
   });
+});
+
+//Animatation
+AOS.init({
+  easing: 'ease-out-back',
+  duration: 2000
+});
+
+hljs.initHighlightingOnLoad();
+
+// Scroll to top
+$('.top').click(function (e) {
+  $('html, body').animate({ 'scrollTop': 0 }, 800);
+  e.preventDefault();
 });
