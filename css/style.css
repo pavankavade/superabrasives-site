@@ -297,6 +297,40 @@ footer{
 #why{
   margin-top: 20vh !important;
 }
+#table1{
+  border-radius: 5px !important;
+  text-align: center;
+  padding-bottom: 28px;
+  background-color: #fff;
+  box-sizing: border-box;
+  color: #444;
+  width: 100%;
+  margin:25px;
+  margin-right:25px !important;
+
+}
+th{
+  padding: 1.5em .5em;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.5), inset 0 -2px 0 rgba(0,0,0,.25), inset 0 -3px 0 rgba(255,255,255,.2), 0 1px 0 rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3);
+}
+tr{
+  padding-top: .7em;
+  padding-bottom: .7em;
+  font-size: 1em;
+  line-height: 1.5em;
+  width: 100%;
+  max-width: 10px;
+  margin: auto;
+  color: inherit;
+  border-bottom: 1px solid rgba(204,204,204,.4);
+}
+td{
+  border: none;
+  max-width: 220px;
+  padding:14px;
+  width: 85% !important;
+
+}
 
   @media (max-width: 789px) {
     #why{
